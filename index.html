@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/blazeface"></script>
+</head>
+
+<body>
+
+  <video id="videoElement" width="640" height="480" autoplay></video>
+  <canvas id="canvas" width="640" height="480" style="position: fixed; top: 0; left: 0;"></canvas>
+
+  <div class="video-options">
+    <select id="cameraselect" class="custom-select">
+      <option value="">Choose Camera</option>
+    </select>
+  </div>
+
+  <div class="controls">
+    <button class="btn btn-danger play" title="Play">Play<i data-feather="play-circle"></i></button>
+    <button class="btn btn-info pause" title="Pause">Pause<i data-feather="pause"></i></button>
+  </div>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
